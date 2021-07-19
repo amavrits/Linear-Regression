@@ -90,6 +90,8 @@ if __name__=='__main__':
     alpha_true, beta_true, sigma_true = read_true_model_coeff()
 
     x_data, y_data = read_data()
+    x_data =  x_data[:100]
+    y_data =  y_data[:100]
 
     alpha_hat, beta_hat, sigma_hat = calc_coeff(x=x_data, y=y_data)
 
